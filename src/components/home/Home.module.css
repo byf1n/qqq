@@ -60,16 +60,32 @@ a {
     color: #8d0000;
 }
 
+
 @media screen and (max-width: 1200px) {
     .home {
         height: 5vw;
+    }
+    .objects > div > p{
+        font-size: 18px;
+    }
+    .objects > div > div{
+        color: #313131;
+        font-size: 14px;
+    }
+    .objects{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
 @media screen and (max-width: 998px) {
     .home {
-        height: 7vw;
+        height: 5vw;
     }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -115,6 +131,38 @@ a {
    .objects_btn{
        padding-bottom: 8vh;
    }
-
-
+    .comp{
+        width: 20px;
+    }
+    .burger{
+        /*background-color: #ffffff;*/
+        height: 25px;
+        width: 25px;
+        display: block;
+    }
+    .burger_part{
+        height: 4px;
+        background-color: black;
+        margin-bottom: 5px;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+    .menu{
+        /*display: none;*/
+        padding-top: 50px;
+        display: block;
+        width: 60vw;
+        height: 100vh;
+        background-color: #083e65;
+        float: right;
+        margin-left: 40vw;
+        position: fixed;
+        /*display: none;*/
+    }
+    .menu_parts{
+        width: 100%;
+        height: 50px;
+        padding-left: 20px;
+        color: white;
+    }
 }
