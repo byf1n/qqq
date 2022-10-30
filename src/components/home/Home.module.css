@@ -1,0 +1,120 @@
+.home {
+    display: flex;
+    justify-content: space-around;
+    height: 3.5vw;
+    background-color: rgba(14, 135, 187, 0.4);
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.img {
+    height: 35vw;
+    background-size: cover;
+    background-position: right;
+
+}
+.hide{
+    display: none;
+}
+.obj{
+    height: 10vh;
+    /*background-color: darkgrey;*/
+    text-align: center;
+    font-size: x-large;
+    padding-top: 14px;
+    box-sizing: border-box;
+
+}
+.objects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 22vh;
+    padding-right: 22vh;
+}
+.img_obj{
+    height: 10vw;
+    width: 18vw;
+    background-size: cover;
+    background-position: right;
+
+}
+.objects > div > p{
+    font-size: 18px;
+}
+.objects > div > div{
+    color: #313131;
+}
+
+.img > div > div > a:hover{
+    color: #8d0000;
+    cursor: pointer;
+}
+
+.img > div > div > a.golovna_text{
+    color: #8d0000;
+}
+
+@media screen and (max-width: 1200px) {
+    .home {
+        height: 5vw;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .home {
+        height: 7vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        height: 9vw;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .img {
+        display: none;
+    }
+    .hide{
+        display: flex;
+        height: 7vh;
+        background-color: rgb(14, 135, 187);
+        /*background-color: rgb(63, 63, 63);*/
+        justify-content: space-between;
+        align-items: center;
+    }
+    .left{
+        padding-left: 15px;
+    }
+    .right{
+        padding-right: 15px;
+    }
+    .img_mobile{
+        height: 50vw;
+        background-size: cover;
+        background-position: right;
+    }
+    .objects{
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .img_obj{
+        height: 50vw;
+        width: 98vw;
+        background-size: cover;
+        background-position: right;
+    }
+   .objects_btn{
+       padding-bottom: 8vh;
+   }
+
+
+}
