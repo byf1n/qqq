@@ -1,6 +1,7 @@
 import css from "../privat/Private.module.css";
 import {Link} from "react-router-dom";
 import {Menu} from "../menu";
+import newCss from './Contacts.module.css'
 
 const Сontacts = () => {
 
@@ -13,11 +14,13 @@ const Сontacts = () => {
                 <Link to={'/multi'}>Багатоповерхівки</Link>
                 <Link className={css.private_text} to={'/contacts'}>Контакти</Link>
             </div>
-            <h1>Контакти</h1>
-            <div>0990485608</div>
-            <div>г. Киев</div>
-            <div>тел. 067 548 20 48 </div>
-            <div>Email: office@budroof.com.ua</div>
+            <div className={newCss.info}>
+                <h1>Контакти</h1>
+                <div>ФІО</div>
+                <div>місто Київ</div>
+                <div>тел. 095 565 09 74</div>
+                <div>Email: email@gmail.com</div>
+            </div>
         </div>
     )
 }

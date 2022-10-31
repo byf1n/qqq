@@ -1,6 +1,8 @@
 import css from "../privat/Private.module.css";
 import {Link} from "react-router-dom";
 import {Menu} from "../menu";
+import img1 from '../../icons/multi/1.jpg';
+import img2 from '../../icons/multi/2.jpg';
 
 const Multi = () => {
 
@@ -15,7 +17,8 @@ const Multi = () => {
                 <Link to={'/contacts'}>Контакти</Link>
             </div>
             <h1>Багатоповерхівки</h1>
-            <div>фотки:</div>
+            <div><img className={css.img12} src={img1} alt="png"/></div>
+            <div><img className={css.img12} src={img2} alt="png"/></div>
         </div>
     )
 }

@@ -5,7 +5,7 @@ const Header = () => {
         <div>
             <header  className={'header'}>
                 <div className={'header_1'}>f t y g</div>
-                <div className={'header_2'}>0675482048</div>
+                <div className={'header_2'}>0955650974</div>
             </header>
         </div>
     )
